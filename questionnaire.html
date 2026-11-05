@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>校園空堂充電站｜問卷表單</title>
+<link rel="icon" type="image/png" href="img/name.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+*{box-sizing:border-box}body{max-width:960px;margin:auto;background:#f4f6f0;color:#292d23;font-family:"Microsoft JhengHei",sans-serif;line-height:1.8}nav{padding:12px 20px;background:#4e533b;color:white;display:flex;flex-wrap:wrap;gap:16px}nav a{color:inherit}header{padding:28px;background:#d5d9c1}h1{font-size:2rem;font-weight:bold}main{padding:28px;background:white}p{margin:10px 0}fieldset{min-width:0;border:2px solid #8f9675;padding:20px;margin:18px 0}legend{padding:0 8px;font-weight:bold;color:#364329}.question{padding:18px;background:#f5f5ed;border:1px solid #d5d9c1;border-radius:8px}.question legend{font-size:1.1rem}.help{color:#4e533b;font-size:.95rem}.choice{display:block;padding:7px 0}.w3-input,.w3-select{background:white;border:1px solid #9ba58f;padding:10px;width:100%;font:inherit}input[type=checkbox],input[type=radio]{margin-right:8px;accent-color:#4e533b}textarea{resize:vertical;min-height:130px}.actions{display:flex;gap:12px;flex-wrap:wrap}.primary{background:#4e533b;color:white}.secondary{background:#e8ebdf;color:#292d23}button{font:inherit;cursor:pointer}#result{margin-top:24px;padding:20px;background:#edf6ef;border:1px solid #8f9675}#result dd{margin:0 0 14px;white-space:pre-wrap;overflow-wrap:anywhere}#result dt{font-weight:bold}footer{padding:20px;background:#a3aa98}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #936400;outline-offset:3px}[hidden]{display:none!important}@media(max-width:600px){main,header{padding:18px}fieldset,.question{padding:12px}h1{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<nav aria-label="網站導覽"><a href="ex2.html">首頁</a><a href="aboutme.html">關於我</a><a href="ex2.html#portfolio">作品集</a><a href="ex2.html#interests">興趣</a><a href="ex2.html#recommend">推薦</a><a href="questionnaire.html" aria-current="page">問卷表單</a></nav>
+<header><p>吳信緯的學習網站 · 問卷練習</p><h1>校園空堂充電站：你的 50 分鐘怎麼過？</h1><p>如果校園有一個專為空堂設計的小角落，你希望它具備什麼？一起想像適合休息、整理作業與補充精神的空間。</p></header>
+<main>
+<p>填答約需 3 分鐘。第 1 題為是非勾選題，其餘題目皆必填。本表單為課堂示範，送出後只在本頁顯示答案，不會傳送或儲存到伺服器；重新整理後答案不會保留。</p>
+<noscript><p>請啟用 JavaScript 後再填寫，本頁需要 JavaScript 顯示送出結果。</p></noscript>
+<form id="survey">
+<fieldset class="w3-round-large"><legend>空堂充電站需求調查（共 9 題）</legend>
+<fieldset class="question" aria-describedby="help1"><legend>1. 你贊成設置「空堂充電站」嗎？（是非題）</legend><p id="help1" class="help">使用一個勾選框：勾選代表「是」，未勾選代表「否」。</p><label class="choice"><input class="w3-check" type="checkbox" name="support" value="是">是，我贊成設置</label></fieldset>
+<fieldset class="question" aria-describedby="help2"><legend>2. 空堂時，你最想先做哪件事？（單選）</legend><p id="help2" class="help">請選出最符合你習慣的一項。</p><label class="choice"><input class="w3-radio" type="radio" name="priority" value="安靜休息" required>安靜休息</label><label class="choice"><input class="w3-radio" type="radio" name="priority" value="完成作業">完成作業</label><label class="choice"><input class="w3-radio" type="radio" name="priority" value="與同學討論">與同學討論</label><label class="choice"><input class="w3-radio" type="radio" name="priority" value="補充飲食">補充飲食</label></fieldset>
+<fieldset class="question"><legend>3. 你偏好哪一種空間氣氛？（單選）</legend><p id="help3" class="help">展開選單，選擇一種最理想的環境。</p><label for="atmosphere">理想氣氛</label><select id="atmosphere" class="w3-select w3-border w3-round" name="atmosphere" aria-describedby="help3" required><option value="" disabled selected>請選擇一項</option><option>完全安靜</option><option>輕柔背景音樂</option><option>可小聲聊天</option><option>分成安靜區與討論區</option></select></fieldset>
+<fieldset class="question" aria-describedby="help4"><legend>4. 你會使用哪些設備？（複選）</legend><p id="help4" class="help">可勾選多項，至少選一項。</p><label class="choice"><input class="w3-check" id="equipment-first" type="checkbox" name="equipment" value="插座與充電區">插座與充電區</label><label class="choice"><input class="w3-check" type="checkbox" name="equipment" value="個人閱讀桌">個人閱讀桌</label><label class="choice"><input class="w3-check" type="checkbox" name="equipment" value="休息座椅">休息座椅</label><label class="choice"><input class="w3-check" type="checkbox" name="equipment" value="討論白板">討論白板</label></fieldset>
+<fieldset class="question"><legend>5. 你希望安排哪些短活動？（複選）</legend><p id="help5" class="help">至少選一項。電腦可按住 Ctrl（Mac 為 Command）點選多項；也可用鍵盤方向鍵及空白鍵操作。手機依系統選單勾選多項。</p><label for="activities">充電站活動</label><select id="activities" class="w3-select w3-border w3-round" name="activities" multiple size="5" aria-describedby="help5" required><option>十分鐘伸展</option><option>作業互助小聚</option><option>桌遊交流</option><option>靜心閱讀</option><option>履歷健檢</option></select></fieldset>
+<fieldset class="question"><legend>6. 幫這個空間取一個名字。（文字填充）</legend><p id="help6" class="help">輸入你原創的名稱，最多 30 個字，不需填真實姓名。</p><label for="station-name">你想的名字</label><input id="station-name" class="w3-input w3-border w3-round" type="text" name="stationName" maxlength="30" placeholder="例如：下堂課之前" aria-describedby="help6" required></fieldset>
+<fieldset class="question"><legend>7. 你每週預計使用幾分鐘？（數字填充）</legend><p id="help7" class="help">請輸入 0 到 600 的整數，單位為分鐘。</p><label for="minutes">每週使用分鐘數</label><input id="minutes" class="w3-input w3-border w3-round" type="number" name="minutes" min="0" max="600" step="1" aria-describedby="help7" required></fieldset>
+<fieldset class="question"><legend>8. 你希望哪一天第一次體驗？（日期填充）</legend><p id="help8" class="help">使用日期選擇器填寫你理想的首次體驗日期。</p><label for="visit-date">首次體驗日期</label><input id="visit-date" class="w3-input w3-border w3-round" type="date" name="visitDate" aria-describedby="help8" required></fieldset>
+<fieldset class="question"><legend>9. 描述你理想中的一段空堂。（問答題）</legend><p id="help9" class="help">可以描述想做的事、需要的協助或空間規則，最多 1000 個字。</p><label for="ideas">我的空堂提案</label><textarea id="ideas" class="w3-input w3-border w3-round" name="ideas" rows="5" maxlength="1000" placeholder="如果我有 50 分鐘空堂，我希望……" aria-describedby="help9" required></textarea></fieldset>
+<div class="actions"><button id="submit-button" class="w3-button w3-round-large primary" type="submit" disabled>送出</button><button class="w3-button w3-round-large secondary" type="reset">重設</button></div>
+</fieldset>
+</form>
+<section id="result" class="w3-round-large" aria-labelledby="result-title" tabindex="-1" hidden><h2 id="result-title">答案預覽</h2><p role="status">已完成本頁檢查，以下是你的答案。資料未傳送至伺服器，也尚未儲存。</p><dl id="answers"></dl></section>
+</main><footer>© 2026 吳信緯｜網頁設計學習作業</footer>
+<script>
+const form = document.getElementById('survey');
+const result = document.getElementById('result');
+const answers = document.getElementById('answers');
+const equipment = [...form.querySelectorAll('[name="equipment"]')];
+function validateEquipment() {
+  equipment[0].setCustomValidity(equipment.some(input => input.checked) ? '' : '第 4 題請至少選擇一項設備。');
+}
+equipment.forEach(input => input.addEventListener('change', validateEquipment));
+validateEquipment();
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  validateEquipment();
+  if (!form.reportValidity()) return;
+  const data = new FormData(form);
+  const items = [
+    ['1. 贊成設置', data.has('support') ? '是' : '否'],
+    ['2. 優先做的事', data.get('priority')],
+    ['3. 空間氣氛', data.get('atmosphere')],
+    ['4. 希望使用的設備', data.getAll('equipment').join('、')],
+    ['5. 希望安排的活動', data.getAll('activities').join('、')],
+    ['6. 空間名稱', data.get('stationName')],
+    ['7. 每週使用時間', data.get('minutes') + ' 分鐘'],
+    ['8. 首次體驗日期', data.get('visitDate')],
+    ['9. 我的空堂提案', data.get('ideas')]
+  ];
+  answers.replaceChildren();
+  items.forEach(([title, value]) => {
+    const dt = document.createElement('dt');
+    const dd = document.createElement('dd');
+    dt.textContent = title;
+    dd.textContent = value;
+    answers.append(dt, dd);
+  });
+  result.hidden = false;
+  result.focus();
+});
+form.addEventListener('reset', () => {
+  result.hidden = true;
+  answers.replaceChildren();
+  setTimeout(validateEquipment, 0);
+});
+document.getElementById('submit-button').disabled = false;
+</script>
+</body>
+</html>
